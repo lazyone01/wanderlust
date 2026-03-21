@@ -1,7 +1,7 @@
 # Environment Variables
 # NEVER push .env files to GitHub
 .env
-.md
+*.md
 .env.local
 .env.*.local
 .env.production.local

@@ -360,6 +360,7 @@ export default function SubmitRoom() {
                     />
                     {imageUrl && (
                       <div className="mt-2 rounded-lg overflow-hidden bg-gray-100 h-32">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src={imageUrl}
                           alt={`Preview ${index + 1}`}

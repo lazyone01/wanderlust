@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -115,9 +116,9 @@ export default function Signup() {
               </button>
               <p className="text-center text-sm text-gray-600">
                 Already have an account?{' '}
-                <a href="/login" className="text-primary font-semibold hover:underline">
+                <Link href="/login" className="text-primary font-semibold hover:underline">
                   Login
-                </a>
+                </Link>
               </p>
             </motion.div>
           )}

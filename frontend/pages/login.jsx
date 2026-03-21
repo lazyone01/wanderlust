@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -93,10 +94,10 @@ export default function Login() {
           </form>
 
           <p className="text-center text-sm text-gray-600 mt-6">
-            Don't have an account?{' '}
-            <a href="/signup" className="text-primary font-semibold hover:underline">
+            Don&apos;t have an account?{' '}
+            <Link href="/signup" className="text-primary font-semibold hover:underline">
               Sign Up
-            </a>
+            </Link>
           </p>
         </motion.div>
       </div>

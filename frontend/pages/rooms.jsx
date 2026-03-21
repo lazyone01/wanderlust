@@ -30,10 +30,12 @@ export default function Rooms() {
 
   useEffect(() => {
     fetchRooms();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.query.city]);
 
   useEffect(() => {
     applyFilters();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [rooms, roomServices, filters, citySearch]);
 
   const fetchRooms = async () => {
@@ -245,6 +247,7 @@ export default function Rooms() {
                         
                         {/* Image */}
                         <div className="relative h-40 w-full overflow-hidden bg-gray-200">
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
                           <img
                             src={room.images?.[0] || 'https://via.placeholder.com/500x400?text=Room+Image'}
                             alt={room.name}

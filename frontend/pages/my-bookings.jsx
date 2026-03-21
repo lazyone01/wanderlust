@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
@@ -121,9 +122,9 @@ export default function MyBookings() {
               className="text-center py-12 bg-white rounded-lg shadow-soft"
             >
               <p className="text-gray-600 text-lg mb-4">No bookings yet</p>
-              <a href="/rooms" className="btn-primary inline-block">
+              <Link href="/rooms" className="btn-primary inline-block">
                 Book a Room →
-              </a>
+              </Link>
             </motion.div>
           )}
         </div>

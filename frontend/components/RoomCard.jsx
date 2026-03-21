@@ -10,6 +10,7 @@ export const RoomCard = ({ room, onBook }) => {
     >
       {/* Image */}
       <div className="relative h-48 w-full overflow-hidden bg-gray-200">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={room.images?.[0] || 'https://via.placeholder.com/500x400'}
           alt={room.name}
