@@ -342,7 +342,7 @@ export default function SubmitRoom() {
                 Add up to 5 image URLs for your room. You can use Google Images URLs or any image hosting service.
                 <br />
                 <span className="text-xs text-blue-600 mt-1 inline-block">
-                  💡 Tip: Search "room" on Google Images, right-click → Copy Image Link, paste here
+                  💡 Tip: Search &quot;room&quot; on Google Images, right-click → Copy Image Link, paste here
                 </span>
               </p>
               <div className="space-y-3">
@@ -412,7 +412,7 @@ export default function SubmitRoom() {
             </motion.button>
 
             <p className="text-center text-sm text-gray-600 mt-4">
-              ⏳ Your room will be reviewed by our admin team and you'll receive an email notification
+              ⏳ Your room will be reviewed by our admin team and you&apos;ll receive an email notification
               once approved.
             </p>
           </form>

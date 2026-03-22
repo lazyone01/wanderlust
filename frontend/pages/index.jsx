@@ -20,6 +20,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchCities();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const fetchCities = async () => {
@@ -77,7 +78,7 @@ export default function Home() {
           className="max-w-6xl mx-auto text-center"
         >
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="gradient-text">Explore India's Best Budget Rooms</span>
+            <span className="gradient-text">Explore India&apos;s Best Budget Rooms</span>
           </h1>
           <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             Discover comfortable, affordable, and verified rooms across 15 major tourist destinations in India

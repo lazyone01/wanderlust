@@ -26,6 +26,7 @@ export default function Complaints() {
       return;
     }
     fetchComplaints();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   const fetchComplaints = async () => {
