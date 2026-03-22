@@ -23,6 +23,7 @@ export default function RoomServicesAdmin() {
     if (user && user.role !== 'admin') {
       router.push('/');
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   useEffect(() => {
